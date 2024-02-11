@@ -5,7 +5,7 @@ def calPoints(operations: List[str]) -> int:
     fin = []
     res = 0
     for i in range(len(operations)):
-        if operations[i].isdigit() or operations[i]:
+        if operations[i].isdigit() or '-' in operations[i]:
             fin.append(operations[i])
         elif operations[i] == 'C':
             # fin.remove(operations[i-1])
